@@ -27,7 +27,7 @@ class SongTile extends StatelessWidget {
             const Border(left: BorderSide(color: MyApp.freshGreen, width: 4)),
         boxShadow: [
           BoxShadow(
-              color: Colors.black.withOpacity(0.3),
+              color: Colors.black.withValues(alpha: 0.3),
               blurRadius: 5,
               offset: const Offset(0, 3)),
         ],
@@ -49,7 +49,7 @@ class SongTile extends StatelessWidget {
             style: const TextStyle(
                 fontWeight: FontWeight.bold, color: Colors.white)),
         subtitle: Text(song.artist,
-            style: TextStyle(color: MyApp.freshGreen.withOpacity(0.7))),
+            style: TextStyle(color: MyApp.freshGreen.withValues(alpha: 0.7))),
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -60,7 +60,7 @@ class SongTile extends StatelessWidget {
             const SizedBox(width: 8),
             Container(
               decoration: BoxDecoration(
-                color: MyApp.electricYellow.withOpacity(0.1),
+                color: MyApp.electricYellow.withValues(alpha: 0.1),
                 shape: BoxShape.circle,
               ),
               child: IconButton(

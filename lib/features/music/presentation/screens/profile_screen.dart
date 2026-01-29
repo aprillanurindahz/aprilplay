@@ -22,7 +22,7 @@ class ProfileScreen extends StatelessWidget {
                 border: Border.all(color: MyApp.electricYellow, width: 3),
                 boxShadow: [
                   BoxShadow(
-                    color: MyApp.electricYellow.withOpacity(0.3),
+                    color: MyApp.electricYellow.withValues(alpha: 0.3),
                     blurRadius: 20,
                     spreadRadius: 5,
                   ),

@@ -1,11 +1,12 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import '../models/song_model.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 part 'song_repository.g.dart';
 
 @riverpod
-SongRepository songRepository(SongRepositoryRef ref) {
+SongRepository songRepository(Ref ref) {
   return SongRepository();
 }
 
